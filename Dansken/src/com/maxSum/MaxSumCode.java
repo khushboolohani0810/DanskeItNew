@@ -1,6 +1,6 @@
 package com.maxSum;
 
-public class Mine {
+public class MaxSumCode {
 
 	public static int maxPathSum(int tri[][], int m) {
 

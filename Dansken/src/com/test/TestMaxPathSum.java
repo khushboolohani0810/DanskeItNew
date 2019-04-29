@@ -1,10 +1,13 @@
 package com.test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import org.junit.Test;
 
-import com.maxSum.Mine;
+import com.maxSum.MaxSumCode;
+
+
 
 public class TestMaxPathSum {
 
@@ -31,33 +34,30 @@ public class TestMaxPathSum {
 			{223,626,034,683,839,052,627,310,713,999,629,817,410,121},
 			{924,622,911,233,325,139,721,218,253,223,107,233,230,124,233}};
 	
-	Mine mine = new Mine();
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+	MaxSumCode msc = new MaxSumCode();
+	
 	
 	@Test
 	public void testSum() {
 		   // Here i am passing expected value 30 so test case will be success.
-		    assertEquals(16, mine.maxPathSum(tri,4));
+		    assertEquals(16, msc.maxPathSum(tri,4));
 		  }
 
 	@Test
 	public void testSum2() {
 		   // Here i am passing expected value 30 so test case will be success.
-		    assertEquals(8186, mine.maxPathSum(tri2,15));
+		    assertEquals(8186, msc.maxPathSum(tri2,15));
 		  }
 	
 	@Test
 	public void testSumnegativecase() {
 		   // Here i am passing expected value 30 so test case will be success.
-		    assertNotEquals(14, mine.maxPathSum(tri,4));
+		    assertNotEquals(14, msc.maxPathSum(tri,4));
 		  }
 	
 	@Test
 	public void test2Sumnegativecase() {
 		   // Here i am passing expected value 30 so test case will be success.
-		    assertNotEquals(14, mine.maxPathSum(tri,4));
+		    assertNotEquals(14, msc.maxPathSum(tri,4));
 		  }
 }
