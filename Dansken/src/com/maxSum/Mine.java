@@ -8,7 +8,7 @@ public class Mine {
 		int[] arr = new int[m-1];
 		int flag =-1;
 		int[][] org = new int[m][m];
-		int temp=0;
+
 		
 		
 		if(tri[0][0]%2==0 && m%2==0){
@@ -51,10 +51,7 @@ public class Mine {
 				{
 					if(tri[i][j]%2==0)
 					{
-						if(org[i+1][j]>org[i+1][j+1])
-							temp=tri[i+1][j];
-						else
-							temp=tri[i+1][j];
+						
 							
 						org[i][j]=tri[i][j]+Math.max(org[i+1][j],org[i+1][j+1]);
 						arr[j]=Math.max(tri[i+1][j],tri[i+1][j+1]);
@@ -81,13 +78,7 @@ public class Mine {
 		}
 		
 		
-//		for(int i=0;i<=m-1;i++){
-//			for(int j=0;j<=m-1;j++){
-//				System.out.print(org[i][j] + " ");
-//			}
-//			System.out.println("");
-//		}
-//		
+
 		return org[0][0]; 
 		
 	}
@@ -115,7 +106,7 @@ public class Mine {
 			{131,171,522,137,217,224,291,413,528,520,227,229,928},
 			{223,626,034,683,839,052,627,310,713,999,629,817,410,121},
 			{924,622,911,233,325,139,721,218,253,223,107,233,230,124,233}};
-		System.out.println ( maxPathSum(tri,4)); 
+		System.out.println ("Maxsum :" + maxPathSum(tri2,15)); 
 	} 
 
 }
