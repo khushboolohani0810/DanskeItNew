@@ -8,6 +8,7 @@ import com.maxSum.Mine;
 
 public class TestMaxPathSum {
 
+	
 	int tri[][] = { {1, 0, 0, 0}, 
 			{8, 9, 0, 0}, 
 			{1, 5, 9, 0},
